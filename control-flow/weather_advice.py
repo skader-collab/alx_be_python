@@ -1,5 +1,5 @@
 #The weather test
-q1 = str(input('What\'s the weather like today? (sunny/rainy/cold):'))
+q1 = input('What\'s the weather like today? (sunny/rainy/cold):'))
 if q1 == 'sunny':
     print('Wear a t-shirt and sunglasses')
 elif q1 == 'rainy':
