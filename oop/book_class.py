@@ -14,14 +14,14 @@ class Book:
         String representation of the Book instance.
         :return: A user-friendly string describing the book.
         """
-        return f"'{self.title}' by {self.author}, published in {self.year}"
+        return f"{self.title} by {self.author}, published in {self.year}"
 
     def __repr__(self):
         """
         Official string representation of the Book instance.
         :return: A string that recreates the Book instance.
         """
-        return f"Book('{self.title}', '{self.author}', {self.year})"
+        return f"Book({self.title}, '{self.author}', {self.year})"
 
 # Example Usage:
 if __name__ == "__main__":
