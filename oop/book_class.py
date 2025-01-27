@@ -21,7 +21,7 @@ class Book:
         Official string representation of the Book instance.
         :return: A string that recreates the Book instance.
         """
-        return f"Book({self.title}, '{self.author}', {self.year})"
+        return f"Book('{self.title}', '{self.author}', {self.year})"
 
 # Example Usage:
 if __name__ == "__main__":
