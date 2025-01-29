@@ -1,34 +1,30 @@
-# polymorphism_demo.py
 import math
 
 class Shape:
     def area(self):
-        raise NotImplementedError("area() method must be overridden by subclasses")
+        raise NotImplementedError("Subclasses must override the area() method")
 
 class Rectangle(Shape):
     def __init__(self, length, width):
         self.length = length
         self.width = width
-
+    
     def area(self):
         return self.length * self.width
 
 class Circle(Shape):
     def __init__(self, radius):
         self.radius = radius
-
+    
     def area(self):
-        return math.pi * self.radius**2
+        """Calculates and returns the area of the circle."""
+        return math.pi * self.radius ** 2
 
-# Example usage (demonstrating polymorphism)
+# Example usage:
 if __name__ == "__main__":
-    shapes = [
-        Rectangle(5, 10),
-        Circle(7),
-        Rectangle(3, 8),
-        Circle(4)
-    ]
-
-    for shape in shapes:
-        print(f"Area of {type(shape).__name__}: {shape.area()}")
+    rectangle = Rectangle(5, 10)
+    circle = Circle(7)
+    
+    print(f"Rectangle Area: {rectangle.area()}")
+    print(f"Circle Area: {circle.area()}")
 
